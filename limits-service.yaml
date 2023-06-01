@@ -1,3 +1,15 @@
+spring:
+  config:
+    active:
+      on-profile: dev
+limits-service:
+  minimum: 2
+  maximum: 998
+---
+spring:
+  config:
+    active:
+      on-profile: uat
 limits-service:
   minimum: 2
   maximum: 998
