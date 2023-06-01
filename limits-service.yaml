@@ -11,5 +11,5 @@ spring:
     active:
       on-profile: uat
 limits-service:
-  minimum: 2
-  maximum: 998
+  minimum: 10
+  maximum: 990
