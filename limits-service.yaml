@@ -6,7 +6,7 @@ limits-service:
   minimum: 2
   maximum: 998
 server:
-  port: 8083
+  port: 8080
 ---
 spring:
   config:
