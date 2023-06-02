@@ -6,8 +6,9 @@ spring:
           uri: lb://currency-exchange-service
           predicates:
             - Path= /currency-exchange/**
-        - id: currency-conversion-service
-          uri: lb://currency-conversion-servic
+        - id: currency-conversion
+          # this uri below match with the service at eureka / naming service
+          uri: lb://currency-conversion-service
           predicates:
             - Path= /currency-conversion/**
 server:
