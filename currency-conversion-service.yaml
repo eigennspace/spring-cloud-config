@@ -4,6 +4,10 @@ spring:
       on-profile: dev
 server:
   port: 8084
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
 ---
 spring:
   config:
