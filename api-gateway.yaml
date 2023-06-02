@@ -2,12 +2,13 @@ spring:
   cloud:
     gateway:
       routes:
+        # this id below is like bean name. If you enable debug log you can easily trace data flow by id of your components.
         - id: currency-exchange-service
+          # this uri below match with the service at eureka / naming service
           uri: lb://currency-exchange-service
           predicates:
             - Path= /currency-exchange/**
         - id: currency-conversion
-          # this uri below match with the service at eureka / naming service
           uri: lb://currency-conversion-service
           predicates:
             - Path= /currency-conversion/**
