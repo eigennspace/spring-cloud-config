@@ -1,0 +1,11 @@
+spring:
+  config:
+    active:
+      on-profile: dev
+server:
+  port: 8084
+---
+spring:
+  config:
+    active:
+      on-profile: uat
